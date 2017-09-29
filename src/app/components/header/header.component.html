@@ -1,19 +1,39 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="#" class="navbar-brand">
-        <span class="rainbow">
-          SpuffieGroep!
-        </span>
-      </a>
-    </div>
-
-    <div class="collapse navbar-collapse">
-      <div class="col"></div>
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a routerLink="/game">The Spuffie Game</a></li>
-        <li routerLinkActive="active"><a routerLink="/about">About Spuffie</a></li>
-      </ul>
-    </div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <a class="navbar-brand" routerLink="/"  style='padding:0px 0px 0px 0px'></a>
+<div class="container" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; width: 100%">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" (click)="toggleBurger()">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
   </div>
+
+<div class="row" id="search">
+  <ul class="navbar-form navbar-right" >
+      <li style="display:flex"><input id='s' [collapse]="isCollapsed" type="text" class="form-control pull-right" placeholder="Search"><a id='sb' class="btn btn-primary" (click)="toggleSearch()"><span class="glyphicon glyphicon-search"></span></a></li>
+  </ul>
+</div>
+
+<div class="row">
+<div class="col-xs-12">
+  <!-- Toggling content -->
+<div class="collapse navbar-collapse" [ngClass]="{ 'in': burgerOpen }">
+  <ul class="nav navbar-nav">
+    <li id="searchOnMobile"><a id='sb' class="btn btn-primary" (click)="toggleSearch()"><span style="vertical-align: initial" class="glyphicon glyphicon-search"></span></a><input style="align-self: center" id='s' [collapse]="isCollapsed" type="text" class="form-control pull-right" placeholder="Search"></li>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleBurger()"><a routerLink="/home">Home</a></li>
+    <li class="dropdown" dropdown>
+    <li id="dropDown" routerLinkActive="active"><a routerLink="/about" (click)="toggleBurger()">About Spuffie</a></li>
+    <li id="dropDown" routerLinkActive="active"><a routerLink="/game" (click)="toggleBurger()">Spuffie Game</a></li>
+    <li routerLinkActive="active"><a routerLink="/contact-us" (click)="toggleBurger()">Contact us</a></li>
+    <li routerLinkActive="active"><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  </ul>
+</div>
+<!-- Toggling content -->
+</div>
+</div>
+  
+
+</div>  
 </nav>

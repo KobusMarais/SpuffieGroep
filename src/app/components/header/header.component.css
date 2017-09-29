@@ -1,8 +1,182 @@
-
-.rainbow {
-  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+nav.navbar.navbar-fixed-top {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+max-height: 80px;
 }
+
+a {
+-webkit-text-fill-color: white;
+height: 40px; 
+}
+
+ul.dropdown-menu {
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+}
+
+div.collapse.navbar-collapse {
+float: right;
+right: 0;
+}
+
+div.collapse.navbar-collapse.in {
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+width: 100%;
+}
+
+.navbar-toggle {
+float: left;
+margin: 8px 15px 8px 15px;
+margin: 8px 15px 8px 15px;
+}
+
+button.navbar-toggle{
+border: none;
+left: 15px;
+}
+
+@media only screen and (max-width : 480px) {
+a.navbar-brand {
+  float: right;
+  height: 48px;
+  width: 48px;
+}
+img {
+  height: 48px;
+  width: 48px; 
+}
+
+#s {
+  position: absolute;
+  right: -10;
+  width: auto;
+}
+
+#sb {
+  position: absolute;
+  right: 0;
+  width: auto;
+}
+#search {
+  display: none;
+}
+#searchOnMobile {
+  display: block;
+}
+#sb[_ngcontent-c1] {
+  position: inherit;
+}
+#s[_ngcontent-c1] {
+  position: initial
+}
+li#searchOnMobile {
+  display: flex;
+}
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+a.navbar-brand {
+  float: right;
+  height: 48px;
+  width: 48px;
+}
+img {
+  height: 48px;
+  width: 48px; 
+}
+
+#s {
+  position: absolute;
+  right: -10;
+  width: auto;
+}
+
+#sb {
+  position: absolute;
+  right: 0;
+  width: auto;
+}
+#search {
+  display: none;
+}
+#searchOnMobile {
+  display: block;
+}
+#sb[_ngcontent-c1] {
+  position: inherit;
+}
+#s[_ngcontent-c1] {
+  position: initial
+}
+li#searchOnMobile {
+  display: flex;
+}
+}
+@media only screen and (min-width : 767px) {
+ul.nav.navbar-nav{
+  float: right;
+}
+li {
+  height: 40px;
+}
+a {
+-webkit-text-fill-color: white;
+height: 40px; 
+}
+a.navbar-brand {
+  height: 40px;
+}
+li#searchOnMobile {
+  display: none;
+}
+img {
+  height: 80px;
+  width: 80px; 
+}
+}
+
+#s {
+position: absolute;
+right: 40px;
+width: auto;
+}
+
+#sb {
+position: absolute;
+right: 0;
+width: auto;
+background-color: rgba(255, 255, 255, 0);
+}
+
+ul.navbar-form.navbar-right {
+padding:0px 0px 0px 0px; 
+margin:0px 0px 0px 0px;
+}
+
+input#s.form-control.pull-right.collapse {
+align-self: center;
+}
+span.glyphicon.glyphicon-search {
+vertical-align: bottom;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top {
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+}
+.navbar-inverse {
+border-color: rgba(255, 255, 255, 0);
+}
+

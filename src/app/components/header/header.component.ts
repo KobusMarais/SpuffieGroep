@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  burgerOpen = false;   // store state
+  public isCollapsed = true;
+  sSearch ;
+ 
+  toggleSearch() {
+    this.isCollapsed = !this.isCollapsed;
+  }
+  
+  toggleBurger() { // click handler
+    this.burgerOpen = !this.burgerOpen;
+  }
+   
   constructor() { }
 
   ngOnInit() {
