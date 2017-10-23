@@ -13,6 +13,7 @@ import { AboutComponent } from './components/about/about.component';
 import { GameComponent } from './components/game/game.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { KylepComponent } from './components/kylep/kylep.component';
 
 @NgModule({
   declarations: [
@@ -22,17 +23,15 @@ import { LoginComponent } from './components/login/login.component';
     AboutComponent,
     GameComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    KylepComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    BsDropdownModule.forRoot(),
-    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
